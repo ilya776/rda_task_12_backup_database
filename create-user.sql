@@ -8,3 +8,5 @@ GRANT ALL ON ShopDBReserve.* TO 'backup'@'%';
 
 -- configure required permissions to restore only data
 GRANT INSERT, LOCK TABLES, ALTER ON ShopDBDevelopment.* TO 'backup'@'%';
+
+FLUSH PRIVILEGES;
